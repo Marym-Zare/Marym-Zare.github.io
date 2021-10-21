@@ -1,219 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <title>ELAXO</title>
-  </head>
 
-  <body>
-    <div id="background">
-      <nav class="navbar">
-        <div class="container category"  dir="ltr">
-          <h1 class="navbarbrand">elaxo</h1>
-          <ul>
-            <li><a class="link" href="#">HOME</a></li>
-            <li><a class="link" href="#">COMPANY</a></li>
-            <li><a class="link" href="#">PRODUCTS</a></li>
-            <li><a class="link" href="#">PAGES</a></li>
-            <li><a id="bottum" href="#">ELEMENTS</a></li>
-          </ul>
-          <button class="btn downloadbtn">DOWNLOAD</button>
-          <button class="collapse">
-            <i class="bi bi-list"></i>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <title>ELAXO</title>
+</head>
+
+<body>
+  <div id="background">
+    <nav class="navbar">
+      <div class="container category" dir="ltr">
+        <h1 class="navbarbrand">elaxo</h1>
+        <ul>
+          <li><a class="link" href="#">HOME</a></li>
+          <li><a class="link" href="#">COMPANY</a></li>
+          <li><a class="link" href="#">PRODUCTS</a></li>
+          <li><a class="link" href="#">PAGES</a></li>
+          <li><a id="bottum" href="#">ELEMENTS</a></li>
+        </ul>
+        <button onclick="toggleModal()" class="btn downloadbtn">DOWNLOAD</button>
+        <button class="collapse">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="container showcase">
+      <div class="sec1">
+        <h1>
+          Help to improve focus <br />
+          for more productive
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+        </p>
+        <div class="btnbox">
+          <div class="dropDown">
+            <button class="btn drop-btn" onclick="toggleDrop()">LEARN MORE</button>
+            <div class="drop-items">
+              <ul>
+                <li class="drop-item"><a href="">Feature 1</a></li>
+                <li class="drop-item"><a href="">Feature 2</a></li>
+                <li class="drop-item"><a href="">Feature 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn2">DOWNLOAD</button>
         </div>
-      </nav>
-        <div class="container showcase">
-        <div class="sec1">
-          <h1>
-            Help to improve focus <br />
-            for more productive
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
-          </p>
-          <div class="btnbox">
+      </div>
+      <div class="sec2">
+        <img src="/images/2.png" alt="" class="img1" />
+      </div>
+    </div>
+  </div>
+  <div id="background2">
+    <div class="container">
+      <div class="littleDiv">DISCOVER</div>
+      <h1 class="h1">Top Features</h1>
+      <div class="khat"></div>
+      <div class="section2">
+        <div class="divSize">
+          <div class="bacicons">
+            <i class="bi bi-music-note-beamed icons"></i>
+          </div>
+          <div>
+            <h4>HD Sounds</h4>
+            <p class="featuresParagraph">
+              HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="divSize">
+          <div class="bacicons">
+            <i class="bi bi-music-note-list icons"></i>
+          </div>
+          <div>
+            <h4>Playlist</h4>
+            <p class="featuresParagraph">
+              HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="divSize">
+          <div class="bacicons"><i class="bi bi-star-fill icons"></i></div>
+          <div>
+            <h4>Favorites</h4>
+            <p class="featuresParagraph">
+              HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="divSize">
+          <div class="bacicons"><i class="bi bi-star-fill icons"></i></div>
+          <div>
+            <h4>Mood Detector</h4>
+            <p class="featuresParagraph">
+              HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="divSize">
+          <div class="bacicons"><i class="bi bi-shuffle icons"></i></div>
+          <div>
+            <h4>Shuffle</h4>
+            <p class="featuresParagraph">
+              HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="divSize">
+          <div class="bacicons">
+            <i class="bi bi-hourglass-split icons"></i>
+          </div>
+          <div>
+            <h4>Timer</h4>
+            <p class="featuresParagraph">
+              HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section3">
+    <div class="container">
+      <div class="part1">
+        <img src="/images/3.png" alt="" />
+      </div>
+      <div class="part2">
+        <div id="littleDiv">PROFILE</div>
+        <h1 class="h1-2">
+          Select a profile or create new <br />
+          one. You deciced!
+        </h1>
+        <buttun class="btn3">Sleep</buttun>
+        <buttun class="btn4">Focus</buttun>
+        <buttun class="btn4">Relax</buttun>
+        <p class="profileParagraph">
+          Consequat occaecat ullamco amet non eiusmod nostrud dolore irure
+          incididunt est duis anim sunt officia. Fugiat velit proident aliquip
+          nisi incididunt nostrud exercitation proident est nisi. Irure magna
+          elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat
+          in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip
+          cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure
+          Lorem incididunt nostrud.
+        </p>
+        <div class="btnbox">
           <button class="btn">LEARN MORE</button>
           <button class="btn2">DOWNLOAD</button>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="section4">
+    <div class="littleDiv">SELECT</div>
+    <div class="container">
+      <h1 class="h1">Pricing Plans</h1>
+      <div class="khat"></div>
+      <div class="box">
+        <div class="box1">
+          <h1>Free</h1>
+          <p>Basic</p>
+          <div class="priceBox">$ 0 p/mo</div>
+          <div class="listBox">
+            <ul>
+              <li>1 device</li>
+              <li>Daily reminder</li>
+              <li>Simple reporting</li>
+              <li>Standart dashboard</li>
+              <li>Email Notification</li>
+              <li>Email Support</li>
+            </ul>
+          </div>
+          <hr />
+          <button class="btn Center">SIGN UP NOW</button>
         </div>
-        <div class="sec2">
-          <img src="/images/2.png" alt="" class="img1" />
+        <div class="box1">
+          <h1>Pro</h1>
+          <p>For Individuals</p>
+          <div class="priceBox">$ 9.59 p/mo</div>
+          <div class="listBox">
+            <ul>
+              <li>Up to 2 devices</li>
+              <li>Daily reminder</li>
+              <li>Detailed reporting</li>
+              <li>Interactive dashboard</li>
+              <li>Email and SMS notification</li>
+              <li>24/7 Customer Support</li>
+            </ul>
+          </div>
+          <hr />
+          <button class="btn Center">SIGN UP NOW</button>
+        </div>
+        <div class="box1">
+          <h1>Pro</h1>
+          <p>For Individuals</p>
+          <div class="priceBox">$ 9.59 p/mo</div>
+          <div class="listBox">
+            <ul>
+              <li>Up to 2 devices</li>
+              <li>Daily reminder</li>
+              <li>Detailed reporting</li>
+              <li>Interactive dashboard</li>
+              <li>Email and SMS notification</li>
+              <li>24/7 Customer Support</li>
+            </ul>
+          </div>
+          <hr />
+          <button class="btn Center">SIGN UP NOW</button>
         </div>
       </div>
     </div>
-    <div id="background2">
-      <div class="container">
-        <div class="littleDiv">DISCOVER</div>
-        <h1 class="h1">Top Features</h1>
-        <div class="khat"></div>
-        <div class="section2">
-          <div class="divSize">
-            <div class="bacicons">
-              <i class="bi bi-music-note-beamed icons"></i>
-            </div>
-            <div>
-              <h4>HD Sounds</h4>
-              <p class="featuresParagraph">
-                HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-          <div class="divSize">
-            <div class="bacicons">
-              <i class="bi bi-music-note-list icons"></i>
-            </div>
-            <div>
-              <h4>Playlist</h4>
-              <p class="featuresParagraph">
-                HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-          <div class="divSize">
-            <div class="bacicons"><i class="bi bi-star-fill icons"></i></div>
-            <div>
-              <h4>Favorites</h4>
-              <p class="featuresParagraph">
-                HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-          <div class="divSize">
-            <div class="bacicons"><i class="bi bi-star-fill icons"></i></div>
-            <div>
-              <h4>Mood Detector</h4>
-              <p class="featuresParagraph">
-                HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-          <div class="divSize">
-            <div class="bacicons"><i class="bi bi-shuffle icons"></i></div>
-            <div>
-              <h4>Shuffle</h4>
-              <p class="featuresParagraph">
-                HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-          <div class="divSize">
-            <div class="bacicons">
-              <i class="bi bi-hourglass-split icons"></i>
-            </div>
-            <div>
-              <h4>Timer</h4>
-              <p class="featuresParagraph">
-                HD Sounds Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-        </div>
+  </div>
+
+  <div class="modal-overlay" onclick="toggleModal()">
+    <div class="modal" onclick="toggleModal()">
+      <div class="modal-header">
+        <h3>Choose your operation system:</h3>
+        <button onclick="toggleModal()"><i class="bi bi-x"></i></button>
       </div>
+      <div class="modal-body"></div>
     </div>
-    <div class="section3">
-      <div class="container">
-        <div class="part1">
-          <img src="/images/3.png" alt="" />
-        </div>
-        <div class="part2">
-          <div id="littleDiv">PROFILE</div>
-          <h1 class="h1-2">
-            Select a profile or create new <br />
-            one. You deciced!
-          </h1>
-          <buttun class="btn3">Sleep</buttun>
-          <buttun class="btn4">Focus</buttun>
-          <buttun class="btn4">Relax</buttun>
-          <p class="profileParagraph">
-            Consequat occaecat ullamco amet non eiusmod nostrud dolore irure
-            incididunt est duis anim sunt officia. Fugiat velit proident aliquip
-            nisi incididunt nostrud exercitation proident est nisi. Irure magna
-            elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat
-            in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip
-            cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure
-            Lorem incididunt nostrud.
-          </p>
-          <div class="btnbox">
-          <button class="btn">LEARN MORE</button>
-          <button class="btn2">DOWNLOAD</button>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="section4">
-      <div class="littleDiv">SELECT</div>
-      <div class="container">
-        <h1 class="h1">Pricing Plans</h1>
-        <div class="khat"></div>
-        <div class="box">
-          <div class="box1">
-            <h1>Free</h1>
-            <p>Basic</p>
-            <div class="priceBox">$ 0 p/mo</div>
-            <div class="listBox">
-              <ul>
-                <li>1 device</li>
-                <li>Daily reminder</li>
-                <li>Simple reporting</li>
-                <li>Standart dashboard</li>
-                <li>Email Notification</li>
-                <li>Email Support</li>
-              </ul>
-            </div>
-            <hr />
-            <button class="btn Center">SIGN UP NOW</button>
-          </div>
-          <div class="box1">
-            <h1>Pro</h1>
-            <p>For Individuals</p>
-            <div class="priceBox">$ 9.59 p/mo</div>
-            <div class="listBox">
-              <ul>
-                <li>Up to 2 devices</li>
-                <li>Daily reminder</li>
-                <li>Detailed reporting</li>
-                <li>Interactive dashboard</li>
-                <li>Email and SMS notification</li>
-                <li>24/7 Customer Support</li>
-              </ul>
-            </div>
-            <hr />
-            <button class="btn Center">SIGN UP NOW</button>
-          </div>
-          <div class="box1">
-            <h1>Pro</h1>
-            <p>For Individuals</p>
-            <div class="priceBox">$ 9.59 p/mo</div>
-            <div class="listBox">
-              <ul>
-                <li>Up to 2 devices</li>
-                <li>Daily reminder</li>
-                <li>Detailed reporting</li>
-                <li>Interactive dashboard</li>
-                <li>Email and SMS notification</li>
-                <li>24/7 Customer Support</li>
-              </ul>
-            </div>
-            <hr />
-            <button class="btn Center">SIGN UP NOW</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+  </div>
+
+
+  <script src="./js/app.js"></script>
+</body>
+
 </html>

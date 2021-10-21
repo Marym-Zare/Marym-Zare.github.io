@@ -126,6 +126,9 @@ a:hover{
     font-size: 35px;
     color: white;
 }
+.btnbox{
+    display: flex;
+}
 .bacicons{
     background-color: rgb(97, 72, 97);
     padding: 23px;
@@ -216,6 +219,56 @@ a:hover{
 .Center{
     margin-top: 20px;
 }
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.modal-overlay.active{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.modal{
+    background-color: white;
+    color: black;
+    width: 45%;
+    height: 500px;
+    display: block;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.modal-header{
+    border-bottom: 2px grey solid;
+    padding: 22px 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-items{
+    padding:5px 10px ;
+    display: none;
+}
+
+.drop-items.active{
+    display: inline;
+}
+ .drop-items ul{
+     background-color: white;
+     list-style: none;
+}
+.drop-item  a {
+    color: black;
+}
+
+
+
 @media screen and (max-width:768px){
     body,html{
         height: auto;
