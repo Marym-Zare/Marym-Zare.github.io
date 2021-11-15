@@ -5,24 +5,38 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-/* body,html{
+body,html{
     height: 100%;
     display: block;
-} */
+}
 .container{
-    padding: 0px 100px;
+    padding: 0px 280px;
 }
 .navbarbrand{
     color: ghostwhite;
     font-size: 30px;
     font-weight: bold;
 }
-a{
+.nav-link{
     text-decoration: none;
     color: aliceblue;
+    position: relative;
+    font-weight:700;
 }
-a:hover{
-    color: palevioletred;
+.nav-link::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+.nav-link:hover::after{
+    transform: scaleX(1);
 }
 .category{
     display: flex;
@@ -40,13 +54,18 @@ a:hover{
   font-size: 15px;
 }
 .btn{
-    background-color: rgb(103, 103, 134);
-    border-radius: 30px;
+    background-color: #8167e6;
+    border-radius: 10px;
     padding:10px 30px ;
     border: none;
     color: ghostwhite;
-    font-weight: bold
+    font-weight: bold;
+    transition: all 0.3s;
 }
+.btn-text{
+    font-size: 16px;
+}
+
 .collapse{
     display: none;
 }
@@ -56,56 +75,69 @@ a:hover{
     background-repeat: no-repeat;
     height: 100%;
 }
+.icon {
+    font-size: 30px;
+    vertical-align: middle;
+}
 .showcase{
     display: flex;
     color: aliceblue;
+    align-items: center;
+    height: 85%;
 
 }
-.sec1{
-    padding-top: 280px;
+.sec1 h1{
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 .sec1 p{
     padding: 20px 0px;
-}
-.sec2{
-    padding-top: 50px;
+    width: 75%;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 .btn2{
     margin-left: 8px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding:10px 30px ;
     color: ghostwhite;
     font-weight: bold;
     background-color: transparent;
-    border-color: rgb(216, 216, 226);
+    border-color: rgba(216, 216, 226, 0.322);
     border-width: 1px;
     border-style: solid;
+    transition: all 0.3s;
 }
 .btn2:hover{
-    background-color: rgb(103, 103, 134);
-    border-color: transparent;
+   background-color: #8167e6;
+    border-color:transparent;
     transition: all 0.3s;
 }
 .btn:hover{
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
+    -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
     box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
--webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
--moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
+    transition: all 0.3s;
 }
 #background2{
-    background-color: rgb(219, 199, 219);
+    background-color: #f0f4fd;
     padding: 90px 0px;
 }
 .section2{
     display: flex;
     flex-wrap: wrap;
 }
-.littleDiv{
+.little-title{
     margin: auto;
     text-align: center;
-    background-color: rgb(201, 146, 201);
+    background-color: #8067e654;
     width: 120px;
-    color: rgb(79, 79, 104);
+    color: #8167e6;
     padding: 5px 0px;
+    border-radius: 4px;
+}
+.left-align{
+    margin-left: 0px;
 }
 .h1{
     text-align: center;
@@ -116,6 +148,7 @@ a:hover{
     width: 100px;
     background-color: rebeccapurple;
     margin: auto;
+    margin-bottom: 40px;
 }
 .divSize{
     width: 33.3%;
@@ -130,39 +163,49 @@ a:hover{
     display: flex;
 }
 .bacicons{
-    background-color: rgb(97, 72, 97);
+    background-color: #8167e6;
     padding: 23px;
     height: 40px;
     border-radius: 50%;
     margin-right: 30px;
     margin-left: 30px;
-    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
-    -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);
-    -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.73);    
 }
 .featuresParagraph{
     line-height: 25px;
     margin-top: 10px;
 }
-.btn3{
-    background-color: rgb(78, 78, 104);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
-}
-.btn4{
+.btn-tab{
     color: rgb(78, 78, 104);
     background-color: transparent;
     border: none;
-    padding:12px 20px;
+    padding:8px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px transparent solid;
+    transition: all 0.3s;
 }
-#littleDiv{
-    text-align: center;
-    background-color: rgb(201, 146, 201);
-    width: 120px;
-    color: rgb(79, 79, 104);
-    padding: 5px 0px;
+.btn-tab:hover{
+    color: #8167e6 !important;
+    border: 2px #8167e6 solid;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.btn-tab:hover.active{
+    color: white !important;
+}
+.colored-outline{
+    border: 2px solid #8167e6 !important;
+    color: #8167e6 !important;
+    border-radius: 10px;
+}
+.colored-outline:hover{
+    background-color: #8167e6 !important;
+    color: white !important;
+}
+.btn-tab.active{
+    background-color: #8167e6;
+    color: ghostwhite;
+    border-radius: 5px;
 }
 .h1-2{
     padding-top: 25px;
@@ -182,39 +225,65 @@ a:hover{
     padding: 150px 0px;
     padding-left: 150px;
 }
-.priceBox{
-    margin-left: -20px;
-    width: 113%;
+.price{
+    width: 100%;
     padding: 40px 0px;
-    background-color: rgb(79, 79, 104);
+    background-color: #8167e6;
+    color:white;
+    font-size: 16px;
+
+}
+.price .price-text{
+    font-size: 48px;
+    font-weight: bold;
+}
+.plan-name{
+    color: #8167e6;
+    margin-bottom: 10px;
+}
+.plan-desc{
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 .h1-3{
     color: rgb(79, 79, 104);
 }
 .listBox ul{
     list-style: none;
-    font-weight: bold;
     line-height: 40px;
+    padding: 0px 25px;
+}
+.colored-check{
+    color: #8167e6;
+    font-size: 14px;
+    margin-right: 10px;
 }
 .listBox{
     padding: 40px 0px;
     text-align: left;
 }
-.box{
+.seperator{
+    border-top: 1px solid rgba(0, 0, 0, 0.048)
+}
+.price-boxes{
     display: flex;
     justify-content: space-between;
 }
 .section4{
-    background-color: rgb(219, 199, 219);
+    background-color: #f0f4fd;
     padding: 70px 0px;
 }
-.box1{
+.price-box{
     width: 33.3%;
+    max-width: 400px;
     margin-left: 25px;
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px;
     border-radius: 10px;
     text-align: center;
+    -webkit-box-shadow: 2px 2px 20px 0px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 20px 0px rgb(0 0 0 / 5%);
 }
 .Center{
     margin-top: 20px;
@@ -345,10 +414,10 @@ a:hover{
         padding-left: 0px;
         padding: 100px 0px;
     }
-    .box{
+    .price-boxes{
         display: block;
     }
-    .box1{
+    .price-box{
         width: auto;
         margin-left: 0px;
         margin-bottom: 15px;
